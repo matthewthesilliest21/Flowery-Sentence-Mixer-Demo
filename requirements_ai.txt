@@ -1,0 +1,3 @@
+# Install requirements.txt first.
+whisperx
+# torch / torchaudio are pulled in as WhisperX dependencies in normal installs.

@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+.mfa/
+output/
+data/whisperx_raw/
+data/mfa_config/
+data/mfa_phone_work/
+data/*demo*library.json
