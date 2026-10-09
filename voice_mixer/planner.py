@@ -4,6 +4,7 @@ from .text import normalize, words
 from pathlib import Path
 
 BONUS = {"phrase": 100, "word": 60, "syllable": 35, "phone": 20, "character": 8}
+PREFERRED_WORD_SOURCES = {"you": "im_only_trying_to_help_you"}
 
 def _score(target, f):
     t, x = normalize(target), normalize(f.text)
@@ -21,7 +22,12 @@ def _word_candidates(word, fragments):
         exact = normalize(word) == normalize(f.text)
         if f.kind == "word" and exact:
             s=_score(word,f)
-            out.append((s,f,f"{f.kind} match"))
+            reason=f"{f.kind} match"
+            preferred_source=PREFERRED_WORD_SOURCES.get(normalize(word))
+            if preferred_source and preferred_source in Path(f.source).stem.casefold():
+                s += 35
+                reason="preferred source match"
+            out.append((s,f,reason))
         elif f.kind == "character" and len(normalize(word)) == 1 and exact:
             s=_score(word,f)
             out.append((s,f,f"{f.kind} match"))

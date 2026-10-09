@@ -15678,7 +15678,7 @@
       "text": "IH",
       "source": "input_audio/snd_flowery_voiceclip_my_king.wav",
       "start": 0.56,
-      "end": 0.96,
+      "end": 0.94,
       "confidence": 0.9,
       "phones": [
         "IH"
@@ -20210,7 +20210,7 @@
       "text": "you're",
       "source": "input_audio/snd_flowery_voiceclip_youre_a_hero.wav",
       "start": 0.04,
-      "end": 0.39,
+      "end": 0.36,
       "confidence": 0.95,
       "phones": [
         "Y",

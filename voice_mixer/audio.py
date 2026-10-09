@@ -25,9 +25,13 @@ def prepare(seg):
         pass
     if seg.dBFS != float('-inf'):
         seg=seg.apply_gain(max(-12,min(12,-20-seg.dBFS)))
+    fade_in_ms=min(5,len(seg)//3)
+    fade_out_ms=min(12,len(seg)//3)
+    if fade_in_ms: seg=seg.fade_in(fade_in_ms)
+    if fade_out_ms: seg=seg.fade_out(fade_out_ms)
     return seg
 
-def render_plan(plan,out_path,crossfade_ms=28):
+def render_plan(plan,out_path,crossfade_ms=40):
     missing=[step.target_text for step in plan.steps if not step.audio_fragments]
     if missing:
         raise ValueError('Cannot render an incomplete sentence; missing audio for: '+', '.join(missing))
