@@ -15,22 +15,6 @@ click its address bar, type powershell, and press enter
 
 3. Check the Python version and create the project environment
 by running these one after the other:
-=======
-Tkinter desktop GUI
-Flowery voicelines
-CMUdict phoneme lookup via pronouncing
-Candidate scoring and assembly explanations
-WAV extraction, normalization, and crossfades via pydub
-Optional WhisperX transcription + alignment importer
-JSON library storage
-CLI sentence builder
-How to use:
-
-Download my project. On its GitHub page, click Code > Download ZIP, then extract the ZIP
-
-Install Python 3.12 64-bit. Open PowerShell or Command Prompt in the extracted project folder. In file explorer, you can open the folder, click its address bar, type powershell, and press enter
-
-Check the Python version and create the project environment by running these one after the other:
 
 py -3.12 --version
 
