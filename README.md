@@ -1,41 +1,45 @@
-# Flowery Sentence Mixer Demo
+---Flowery Sentence Mixer Demo---
 
-A small Windows desktop app that searches and recombines the included Flowery voice recordings. It does not synthesize missing speech or use AI to create audio.
+A desktop sentence mixer using the included Flowery recordings. It searches and recombines recorded audio. It DOES NOT use AI to create missing sound.
 
-## Run the packaged Windows app
+Included
 
-1. Download VoiceLineMixer-portable.zip from the repository's Releases page.
-2. Extract the entire ZIP, keeping its folder structure.
-3. Open VoiceLineMixer.exe.
+How to use:
 
-Python is not required. The recordings and timing library are included. Built audio is saved under %LOCALAPPDATA%\VoiceLineMixer\output.
+1. Download my project. On its GitHub page, click Code > Download ZIP, then
+extract the ZIP
 
-WAV playback and export work without additional software. MP3 export requires FFmpeg; if it is unavailable, use WAV.
+2. Install Python 3.12 64-bit. Open PowerShell or Command Prompt in the
+extracted project folder. In file explorer, you can open the folder,
+click its address bar, type powershell, and press enter
 
-## Run from source
+3. Check the Python version and create the project environment
+by running these one after the other:
 
-Install Python 3.12 64-bit. In PowerShell, from the project folder, run:
+py -3.12 --version
 
-~~~powershell
 py -3.12 -m venv .venv
+
+4. Install the requirements by running these one after the other:
+
+.\.venv\Scripts\python.exe -m pip install --upgrade pip
+
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+
+5. Launch the project:
+
 .\.venv\Scripts\python.exe app.py
-~~~
 
-Enter a sentence, click BUILD, and use Play latest audio. The plan shows which recordings and time ranges were used. You can save the result as WAV or, when FFmpeg is available, MP3.
+Or just make a shortcut to app.py.
 
-The optional transcription dependencies are not needed to use the included recordings. They are for transcribing custom recordings.
+Enter a sentence, click BUILD, and click Play latest audio.
+You can save the result as WAVor mp3. You need FFmpeg to save in mp3
 
-## Build the portable Windows ZIP
+Since you viewer probably just want to make Flowery say silly things,
+installing the "AI" requirements isn't needed. The only thing it does
+is transcribe the voicelines and stuff, which would be useful if you wanted
+to make sentences with custom sounds.
 
-Build on Windows with Python 3.12. Install the runtime and build dependencies, then run:
 
-~~~powershell
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt
-.\.venv\Scripts\python.exe -m pip install -r requirements-build.txt
-.\build_portable.ps1
-~~~
 
-The script creates dist\VoiceLineMixer-portable.zip. Upload that ZIP to a GitHub Release so people can download the packaged app without Python.
-
-This project is fan-made and is not affiliated with Toby Fox.
+I have no affiliation with Toby Fox and this was made purely for fun. I'm also kind of a medium-experience coder, and it took me a lot of spaggethi code for this.
