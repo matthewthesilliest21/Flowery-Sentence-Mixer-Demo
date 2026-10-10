@@ -8959,8 +8959,8 @@
       "kind": "phone",
       "text": "B",
       "source": "input_audio/snd_flowery_voiceclip_blingo_blizzard.wav",
-      "start": 0.0,
-      "end": 0.19,
+      "start": 0.172,
+      "end": 0.213,
       "confidence": 0.9,
       "phones": [
         "B"
@@ -9455,7 +9455,7 @@
       "kind": "phone",
       "text": "L",
       "source": "input_audio/snd_flowery_voiceclip_dont_you_like_serving_humans.wav",
-      "start": 0.49,
+      "start": 0.554,
       "end": 0.68,
       "confidence": 0.9,
       "phones": [
@@ -9494,7 +9494,7 @@
       "kind": "phone",
       "text": "S",
       "source": "input_audio/snd_flowery_voiceclip_dont_you_like_serving_humans.wav",
-      "start": 0.86,
+      "start": 0.896,
       "end": 0.99,
       "confidence": 0.9,
       "phones": [
@@ -9559,7 +9559,7 @@
       "kind": "phone",
       "text": "HH",
       "source": "input_audio/snd_flowery_voiceclip_dont_you_like_serving_humans.wav",
-      "start": 1.24,
+      "start": 1.298,
       "end": 1.36,
       "confidence": 0.9,
       "phones": [
@@ -9651,7 +9651,7 @@
       "text": "don't",
       "source": "input_audio/snd_flowery_voiceclip_dont_you_like_serving_humans.wav",
       "start": 0.0,
-      "end": 0.21,
+      "end": 0.41,
       "confidence": 0.95,
       "phones": [
         "D",
@@ -9807,7 +9807,7 @@
       "kind": "phone",
       "text": "B",
       "source": "input_audio/snd_flowery_voiceclip_flowers_blooms_in_your_heart.wav",
-      "start": 0.44,
+      "start": 0.454,
       "end": 0.48,
       "confidence": 0.9,
       "phones": [
@@ -10357,7 +10357,7 @@
       "kind": "phone",
       "text": "CH",
       "source": "input_audio/snd_flowery_voiceclip_get_a_chance_1.wav",
-      "start": 0.33,
+      "start": 0.393,
       "end": 0.53,
       "confidence": 0.9,
       "phones": [
@@ -10793,7 +10793,7 @@
       "kind": "phone",
       "text": "HH",
       "source": "input_audio/snd_flowery_voiceclip_go_home.wav",
-      "start": 0.26,
+      "start": 0.297,
       "end": 0.36,
       "confidence": 0.9,
       "phones": [
@@ -10924,7 +10924,7 @@
       "kind": "phone",
       "text": "S",
       "source": "input_audio/snd_flowery_voiceclip_great_style.wav",
-      "start": 0.42,
+      "start": 0.453,
       "end": 0.54,
       "confidence": 0.9,
       "phones": [
@@ -11697,7 +11697,7 @@
       "kind": "phone",
       "text": "S",
       "source": "input_audio/snd_flowery_voiceclip_hereicomesanfrandisco_strong.wav",
-      "start": 0.87,
+      "start": 0.943,
       "end": 1.05,
       "confidence": 0.9,
       "phones": [
@@ -11737,7 +11737,7 @@
       "text": "F",
       "source": "input_audio/snd_flowery_voiceclip_hereicomesanfrandisco_strong.wav",
       "start": 1.22,
-      "end": 1.29,
+      "end": 1.33,
       "confidence": 0.9,
       "phones": [
         "F"
@@ -12034,7 +12034,7 @@
       "kind": "phone",
       "text": "S",
       "source": "input_audio/snd_flowery_voiceclip_hereicomesanfrandisco_weak.wav",
-      "start": 0.7,
+      "start": 0.76,
       "end": 0.79,
       "confidence": 0.9,
       "phones": [
@@ -12450,7 +12450,7 @@
       "kind": "phone",
       "text": "L",
       "source": "input_audio/snd_flowery_voiceclip_heytherelittleguy (1).wav",
-      "start": 0.5,
+      "start": 0.548,
       "end": 0.58,
       "confidence": 0.9,
       "phones": [
@@ -12677,7 +12677,7 @@
       "kind": "phone",
       "text": "L",
       "source": "input_audio/snd_flowery_voiceclip_heytherelittleguy.wav",
-      "start": 0.5,
+      "start": 0.548,
       "end": 0.58,
       "confidence": 0.9,
       "phones": [
@@ -13166,7 +13166,7 @@
       "kind": "phone",
       "text": "SH",
       "source": "input_audio/snd_flowery_voiceclip_huhillshowyou.wav",
-      "start": 0.56,
+      "start": 0.64,
       "end": 0.75,
       "confidence": 0.9,
       "phones": [
@@ -13192,7 +13192,7 @@
       "kind": "phone",
       "text": "Y",
       "source": "input_audio/snd_flowery_voiceclip_huhillshowyou.wav",
-      "start": 0.87,
+      "start": 0.952,
       "end": 1.02,
       "confidence": 0.9,
       "phones": [
@@ -14005,7 +14005,7 @@
       "kind": "phone",
       "text": "Y",
       "source": "input_audio/snd_flowery_voiceclip_its_all_yours.wav",
-      "start": 0.72,
+      "start": 0.752,
       "end": 0.81,
       "confidence": 0.9,
       "phones": [
@@ -14152,7 +14152,7 @@
       "kind": "phone",
       "text": "S",
       "source": "input_audio/snd_flowery_voiceclip_its_so_human.wav",
-      "start": 0.65,
+      "start": 0.653,
       "end": 0.79,
       "confidence": 0.9,
       "phones": [
@@ -14178,7 +14178,7 @@
       "kind": "phone",
       "text": "HH",
       "source": "input_audio/snd_flowery_voiceclip_its_so_human.wav",
-      "start": 0.93,
+      "start": 0.995,
       "end": 1.04,
       "confidence": 0.9,
       "phones": [
@@ -15009,8 +15009,8 @@
       "kind": "phone",
       "text": "IH",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two (1).wav",
-      "start": 0.03,
-      "end": 0.84,
+      "start": 0.031,
+      "end": 0.051,
       "confidence": 0.9,
       "phones": [
         "IH"
@@ -15022,8 +15022,8 @@
       "kind": "phone",
       "text": "T",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two (1).wav",
-      "start": 0.84,
-      "end": 0.87,
+      "start": 0.051,
+      "end": 0.071,
       "confidence": 0.9,
       "phones": [
         "T"
@@ -15035,8 +15035,8 @@
       "kind": "phone",
       "text": "S",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two (1).wav",
-      "start": 0.87,
-      "end": 0.9,
+      "start": 0.091,
+      "end": 0.112,
       "confidence": 0.9,
       "phones": [
         "S"
@@ -15048,8 +15048,8 @@
       "kind": "phone",
       "text": "M",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two (1).wav",
-      "start": 0.9,
-      "end": 0.93,
+      "start": 0.132,
+      "end": 0.232,
       "confidence": 0.9,
       "phones": [
         "M"
@@ -15061,8 +15061,8 @@
       "kind": "phone",
       "text": "AY",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two (1).wav",
-      "start": 0.93,
-      "end": 0.96,
+      "start": 0.232,
+      "end": 0.313,
       "confidence": 0.9,
       "phones": [
         "AY"
@@ -15074,8 +15074,8 @@
       "kind": "phone",
       "text": "F",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two (1).wav",
-      "start": 0.96,
-      "end": 0.99,
+      "start": 0.454,
+      "end": 0.575,
       "confidence": 0.9,
       "phones": [
         "F"
@@ -15087,8 +15087,8 @@
       "kind": "phone",
       "text": "EY",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two (1).wav",
-      "start": 0.99,
-      "end": 1.18,
+      "start": 0.575,
+      "end": 0.635,
       "confidence": 0.9,
       "phones": [
         "EY"
@@ -15100,8 +15100,8 @@
       "kind": "phone",
       "text": "V",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two (1).wav",
-      "start": 1.18,
-      "end": 1.21,
+      "start": 0.635,
+      "end": 0.716,
       "confidence": 0.9,
       "phones": [
         "V"
@@ -15113,8 +15113,8 @@
       "kind": "phone",
       "text": "R",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two (1).wav",
-      "start": 1.21,
-      "end": 1.24,
+      "start": 0.716,
+      "end": 0.797,
       "confidence": 0.9,
       "phones": [
         "R"
@@ -15126,8 +15126,8 @@
       "kind": "phone",
       "text": "AH",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two (1).wav",
-      "start": 1.24,
-      "end": 1.27,
+      "start": 0.797,
+      "end": 0.837,
       "confidence": 0.9,
       "phones": [
         "AH"
@@ -15139,8 +15139,8 @@
       "kind": "phone",
       "text": "T",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two (1).wav",
-      "start": 1.27,
-      "end": 1.56,
+      "start": 0.837,
+      "end": 0.857,
       "confidence": 0.9,
       "phones": [
         "T"
@@ -15152,8 +15152,8 @@
       "kind": "phone",
       "text": "T",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two (1).wav",
-      "start": 1.56,
-      "end": 1.59,
+      "start": 0.938,
+      "end": 0.978,
       "confidence": 0.9,
       "phones": [
         "T"
@@ -15165,8 +15165,8 @@
       "kind": "phone",
       "text": "UW",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two (1).wav",
-      "start": 1.59,
-      "end": 1.62,
+      "start": 0.978,
+      "end": 1.2,
       "confidence": 0.9,
       "phones": [
         "UW"
@@ -15178,8 +15178,8 @@
       "kind": "word",
       "text": "it's",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two (1).wav",
-      "start": 0.03,
-      "end": 0.9,
+      "start": 0.031,
+      "end": 0.112,
       "confidence": 0.95,
       "phones": [
         "IH",
@@ -15193,8 +15193,8 @@
       "kind": "word",
       "text": "my",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two (1).wav",
-      "start": 0.9,
-      "end": 0.96,
+      "start": 0.132,
+      "end": 0.313,
       "confidence": 0.95,
       "phones": [
         "M",
@@ -15207,8 +15207,8 @@
       "kind": "word",
       "text": "favorite",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two (1).wav",
-      "start": 0.96,
-      "end": 1.56,
+      "start": 0.454,
+      "end": 0.897,
       "confidence": 0.95,
       "phones": [
         "F",
@@ -15225,8 +15225,8 @@
       "kind": "word",
       "text": "two",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two (1).wav",
-      "start": 1.56,
-      "end": 1.62,
+      "start": 0.938,
+      "end": 1.2,
       "confidence": 0.95,
       "phones": [
         "T",
@@ -15239,8 +15239,8 @@
       "kind": "phrase",
       "text": "it's my favorite two",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two (1).wav",
-      "start": 0.03,
-      "end": 1.62,
+      "start": 0.031,
+      "end": 1.2,
       "confidence": 0.95,
       "phones": [],
       "left_context": "",
@@ -15250,8 +15250,8 @@
       "kind": "phone",
       "text": "IH",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two.wav",
-      "start": 0.03,
-      "end": 0.84,
+      "start": 0.031,
+      "end": 0.051,
       "confidence": 0.9,
       "phones": [
         "IH"
@@ -15263,8 +15263,8 @@
       "kind": "phone",
       "text": "T",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two.wav",
-      "start": 0.84,
-      "end": 0.87,
+      "start": 0.051,
+      "end": 0.071,
       "confidence": 0.9,
       "phones": [
         "T"
@@ -15276,8 +15276,8 @@
       "kind": "phone",
       "text": "S",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two.wav",
-      "start": 0.87,
-      "end": 0.9,
+      "start": 0.091,
+      "end": 0.112,
       "confidence": 0.9,
       "phones": [
         "S"
@@ -15289,8 +15289,8 @@
       "kind": "phone",
       "text": "M",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two.wav",
-      "start": 0.9,
-      "end": 0.93,
+      "start": 0.132,
+      "end": 0.232,
       "confidence": 0.9,
       "phones": [
         "M"
@@ -15302,8 +15302,8 @@
       "kind": "phone",
       "text": "AY",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two.wav",
-      "start": 0.93,
-      "end": 0.96,
+      "start": 0.232,
+      "end": 0.313,
       "confidence": 0.9,
       "phones": [
         "AY"
@@ -15315,8 +15315,8 @@
       "kind": "phone",
       "text": "F",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two.wav",
-      "start": 0.96,
-      "end": 0.99,
+      "start": 0.454,
+      "end": 0.575,
       "confidence": 0.9,
       "phones": [
         "F"
@@ -15328,8 +15328,8 @@
       "kind": "phone",
       "text": "EY",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two.wav",
-      "start": 0.99,
-      "end": 1.18,
+      "start": 0.575,
+      "end": 0.635,
       "confidence": 0.9,
       "phones": [
         "EY"
@@ -15341,8 +15341,8 @@
       "kind": "phone",
       "text": "V",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two.wav",
-      "start": 1.18,
-      "end": 1.21,
+      "start": 0.635,
+      "end": 0.716,
       "confidence": 0.9,
       "phones": [
         "V"
@@ -15354,8 +15354,8 @@
       "kind": "phone",
       "text": "R",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two.wav",
-      "start": 1.21,
-      "end": 1.24,
+      "start": 0.716,
+      "end": 0.797,
       "confidence": 0.9,
       "phones": [
         "R"
@@ -15367,8 +15367,8 @@
       "kind": "phone",
       "text": "AH",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two.wav",
-      "start": 1.24,
-      "end": 1.27,
+      "start": 0.797,
+      "end": 0.837,
       "confidence": 0.9,
       "phones": [
         "AH"
@@ -15380,8 +15380,8 @@
       "kind": "phone",
       "text": "T",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two.wav",
-      "start": 1.27,
-      "end": 1.56,
+      "start": 0.837,
+      "end": 0.857,
       "confidence": 0.9,
       "phones": [
         "T"
@@ -15393,8 +15393,8 @@
       "kind": "phone",
       "text": "T",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two.wav",
-      "start": 1.56,
-      "end": 1.59,
+      "start": 0.938,
+      "end": 0.978,
       "confidence": 0.9,
       "phones": [
         "T"
@@ -15406,8 +15406,8 @@
       "kind": "phone",
       "text": "UW",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two.wav",
-      "start": 1.59,
-      "end": 1.62,
+      "start": 0.978,
+      "end": 1.2,
       "confidence": 0.9,
       "phones": [
         "UW"
@@ -15419,8 +15419,8 @@
       "kind": "word",
       "text": "it's",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two.wav",
-      "start": 0.03,
-      "end": 0.9,
+      "start": 0.031,
+      "end": 0.112,
       "confidence": 0.95,
       "phones": [
         "IH",
@@ -15434,8 +15434,8 @@
       "kind": "word",
       "text": "my",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two.wav",
-      "start": 0.9,
-      "end": 0.96,
+      "start": 0.132,
+      "end": 0.313,
       "confidence": 0.95,
       "phones": [
         "M",
@@ -15448,8 +15448,8 @@
       "kind": "word",
       "text": "favorite",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two.wav",
-      "start": 0.96,
-      "end": 1.56,
+      "start": 0.454,
+      "end": 0.897,
       "confidence": 0.95,
       "phones": [
         "F",
@@ -15466,8 +15466,8 @@
       "kind": "word",
       "text": "two",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two.wav",
-      "start": 1.56,
-      "end": 1.62,
+      "start": 0.938,
+      "end": 1.2,
       "confidence": 0.95,
       "phones": [
         "T",
@@ -15480,8 +15480,8 @@
       "kind": "phrase",
       "text": "it's my favorite two",
       "source": "input_audio/snd_flowery_voiceclip_my_favorite_two.wav",
-      "start": 0.03,
-      "end": 1.62,
+      "start": 0.031,
+      "end": 1.2,
       "confidence": 0.95,
       "phones": [],
       "left_context": "",
@@ -15769,7 +15769,7 @@
       "kind": "phone",
       "text": "N",
       "source": "input_audio/snd_flowery_voiceclip_nonono.wav",
-      "start": 0.3,
+      "start": 0.363,
       "end": 0.44,
       "confidence": 0.9,
       "phones": [
@@ -15795,7 +15795,7 @@
       "kind": "phone",
       "text": "N",
       "source": "input_audio/snd_flowery_voiceclip_nonono.wav",
-      "start": 0.63,
+      "start": 0.675,
       "end": 0.72,
       "confidence": 0.9,
       "phones": [
@@ -16004,7 +16004,7 @@
       "kind": "phone",
       "text": "CH",
       "source": "input_audio/snd_flowery_voiceclip_no_way_its_your_children.wav",
-      "start": 0.9,
+      "start": 0.944,
       "end": 1.02,
       "confidence": 0.9,
       "phones": [
@@ -17035,7 +17035,7 @@
       "kind": "phone",
       "text": "L",
       "source": "input_audio/snd_flowery_voiceclip_sorrytokeepaladyinwaiting.wav",
-      "start": 0.67,
+      "start": 0.748,
       "end": 0.82,
       "confidence": 0.9,
       "phones": [
@@ -18029,7 +18029,7 @@
       "kind": "phone",
       "text": "DH",
       "source": "input_audio/snd_flowery_voiceclip_take_that.wav",
-      "start": 0.33,
+      "start": 0.333,
       "end": 0.42,
       "confidence": 0.9,
       "phones": [
@@ -18147,7 +18147,7 @@
       "kind": "phone",
       "text": "G",
       "source": "input_audio/snd_flowery_voiceclip_thatsgreat.wav",
-      "start": 0.38,
+      "start": 0.384,
       "end": 0.49,
       "confidence": 0.9,
       "phones": [
@@ -18294,7 +18294,7 @@
       "kind": "phone",
       "text": "M",
       "source": "input_audio/snd_flowery_voiceclip_thats_my_dreams.wav",
-      "start": 0.37,
+      "start": 0.416,
       "end": 0.44,
       "confidence": 0.9,
       "phones": [
@@ -18560,7 +18560,7 @@
       "kind": "phone",
       "text": "F",
       "source": "input_audio/snd_flowery_voiceclip_theyre_eating_my_flesh.wav",
-      "start": 1.01,
+      "start": 1.043,
       "end": 1.12,
       "confidence": 0.9,
       "phones": [
@@ -19165,8 +19165,8 @@
       "kind": "phone",
       "text": "M",
       "source": "input_audio/snd_flowery_voiceclip_try_my_flavor.wav",
-      "start": 0.32,
-      "end": 0.39,
+      "start": 0.374,
+      "end": 0.455,
       "confidence": 0.9,
       "phones": [
         "M"
@@ -19178,8 +19178,8 @@
       "kind": "phone",
       "text": "AY",
       "source": "input_audio/snd_flowery_voiceclip_try_my_flavor.wav",
-      "start": 0.39,
-      "end": 0.52,
+      "start": 0.455,
+      "end": 0.536,
       "confidence": 0.9,
       "phones": [
         "AY"
@@ -19217,8 +19217,8 @@
       "kind": "phone",
       "text": "EY",
       "source": "input_audio/snd_flowery_voiceclip_try_my_flavor.wav",
-      "start": 0.71,
-      "end": 0.88,
+      "start": 0.778,
+      "end": 0.859,
       "confidence": 0.9,
       "phones": [
         "EY"
@@ -19271,8 +19271,8 @@
       "kind": "word",
       "text": "my",
       "source": "input_audio/snd_flowery_voiceclip_try_my_flavor.wav",
-      "start": 0.32,
-      "end": 0.52,
+      "start": 0.374,
+      "end": 0.536,
       "confidence": 0.95,
       "phones": [
         "M",
@@ -19521,7 +19521,7 @@
       "kind": "phone",
       "text": "K",
       "source": "input_audio/snd_flowery_voiceclip_what_a_predictable_creature.wav",
-      "start": 0.97,
+      "start": 1.023,
       "end": 1.08,
       "confidence": 0.9,
       "phones": [
@@ -19951,7 +19951,7 @@
       "kind": "phone",
       "text": "F",
       "source": "input_audio/snd_flowery_voiceclip_yourdadsmybestfriend.wav",
-      "start": 1.31,
+      "start": 1.312,
       "end": 1.39,
       "confidence": 0.9,
       "phones": [

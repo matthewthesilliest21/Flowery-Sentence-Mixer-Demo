@@ -1,17 +1,36 @@
 from pathlib import Path
 import os
-
-LOCAL_FFMPEG = Path(__file__).resolve().parents[1] / '.venv' / 'Scripts' / 'ffmpeg.exe'
-if LOCAL_FFMPEG.is_file():
-    ffmpeg_dir = str(LOCAL_FFMPEG.parent)
-    path_entries = os.environ.get('PATH', '').split(os.pathsep)
-    if ffmpeg_dir not in path_entries:
-        os.environ['PATH'] = ffmpeg_dir + os.pathsep + os.environ.get('PATH', '')
+import shutil
+import sys
 
 from pydub import AudioSegment, effects
 
-if LOCAL_FFMPEG.is_file():
-    AudioSegment.converter = str(LOCAL_FFMPEG)
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+RESOURCE_ROOT = Path(getattr(sys, "_MEIPASS", PROJECT_ROOT))
+
+
+def get_ffmpeg_path():
+    """Return a usable FFmpeg path without requiring it for WAV operations."""
+    bundled = RESOURCE_ROOT / "ffmpeg.exe"
+    if bundled.is_file():
+        return bundled
+
+    if not getattr(sys, "frozen", False):
+        local = PROJECT_ROOT / ".venv" / "Scripts" / "ffmpeg.exe"
+        if local.is_file():
+            ffmpeg_dir = str(local.parent)
+            path_entries = os.environ.get("PATH", "").split(os.pathsep)
+            if ffmpeg_dir not in path_entries:
+                os.environ["PATH"] = ffmpeg_dir + os.pathsep + os.environ.get("PATH", "")
+            return local
+
+    located = shutil.which("ffmpeg.exe") or shutil.which("ffmpeg")
+    return Path(located) if located else None
+
+
+FFMPEG_PATH = get_ffmpeg_path()
+if FFMPEG_PATH is not None:
+    AudioSegment.converter = str(FFMPEG_PATH)
 
 def load_fragment(source,start,end):
     audio=AudioSegment.from_file(source)

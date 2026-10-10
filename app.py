@@ -5,13 +5,14 @@ from tkinter import filedialog,messagebox,ttk
 from voice_mixer.demo import create_demo
 from voice_mixer.storage import load_library
 from voice_mixer.planner import plan_sentence
-from voice_mixer.audio import AudioSegment, render_plan
+from voice_mixer.audio import AudioSegment, get_ffmpeg_path, render_plan
+from voice_mixer.paths import APP_DATA_ROOT, LIBRARY_PATH, OUTPUT_PATH
 
-ROOT=Path(__file__).resolve().parent; LIB=ROOT/'data/library.json'; OUT=ROOT/'output/gui_result.wav'
+ROOT=APP_DATA_ROOT; LIB=LIBRARY_PATH; OUT=OUTPUT_PATH
 
 class App:
     def __init__(self,root):
-        self.root=root; self.root.title('Flowery Sentence Mixer Demo'); self.root.geometry('1050x680'); self.fragments=[]; self.plan=None; self.latest_output=OUT if OUT.is_file() else None
+        self.root=root; self.root.title('Flowery Sentence Mixer Demo'); self.root.geometry('1050x680'); self.fragments=[]; self.plan=None; self.ffmpeg_path=get_ffmpeg_path(); self.latest_output=OUT if OUT.is_file() else None
         top=ttk.Frame(root,padding=12); top.pack(fill='x'); ttk.Label(top,text='Flowery Sentence Mixer Demo',font=('TkDefaultFont',20,'bold')).pack(anchor='w'); ttk.Label(top,text='Made by Matthew').pack(anchor='w')
         controls=ttk.Frame(root,padding=(12,8)); controls.pack(fill='x'); ttk.Button(controls,text='Create Demo Library',command=self.demo).pack(side='left'); ttk.Button(controls,text='Reload Library',command=self.load).pack(side='left',padx=6)
         self.target=tk.StringVar(value="Your dad's falling!"); ttk.Entry(controls,textvariable=self.target,font=('TkDefaultFont',12)).pack(side='left',fill='x',expand=True,padx=8); ttk.Button(controls,text='BUILD',command=self.build).pack(side='left'); self.status=tk.StringVar(); ttk.Label(root,textvariable=self.status,padding=(12,0)).pack(anchor='w')
@@ -33,12 +34,14 @@ class App:
     def load(self,path=LIB):
         self.fragments=load_library(path); self.tree.delete(*self.tree.get_children());
         for f in self.fragments:self.tree.insert('','end',values=(f.kind,f.text,f'{f.duration:.2f}'))
-        self.status.set(f'{len(self.fragments)} fragments loaded')
+        suffix = '' if self.ffmpeg_path else ' — MP3 export needs FFmpeg; WAV is available'
+        self.status.set(f'{len(self.fragments)} fragments loaded{suffix}')
     def _refresh_output_controls(self):
         available=self.latest_output is not None and self.latest_output.is_file()
         state='normal' if available else 'disabled'
-        self.play_button.configure(state=state); self.stop_button.configure(state=state); self.save_wav_button.configure(state=state); self.save_mp3_button.configure(state=state)
+        self.play_button.configure(state=state); self.stop_button.configure(state=state); self.save_wav_button.configure(state=state); self.save_mp3_button.configure(state='normal' if available and self.ffmpeg_path else 'disabled')
         label=f'Latest audio: {self.latest_output.relative_to(ROOT)}' if available else 'Latest audio: not built yet'
+        if available and not self.ffmpeg_path: label += ' (MP3 requires FFmpeg)'
         self.latest_label.set(label)
     def play_latest(self):
         if self.latest_output is None or not self.latest_output.is_file():return
@@ -69,9 +72,11 @@ class App:
         if self.latest_output is None or not self.latest_output.is_file():return
         destination=self._save_dialog('mp3','MP3 audio')
         if not destination:return
+        if not self.ffmpeg_path:
+            messagebox.showerror('FFmpeg required','MP3 export needs FFmpeg. WAV export works without it.',parent=self.root)
+            return
         try:
-            ffmpeg=ROOT/'.venv'/'Scripts'/'ffmpeg.exe'
-            if ffmpeg.is_file():AudioSegment.converter=str(ffmpeg)
+            AudioSegment.converter=str(self.ffmpeg_path)
             target=Path(destination)
             AudioSegment.from_wav(self.latest_output).export(target,format='mp3',bitrate='192k')
             self.status.set(f'Saved MP3 to {target}')
@@ -95,7 +100,8 @@ class App:
                     self.out.insert('end','\n')
             else:self.out.insert('end','   MISSING: no generation.\n\n')
         try:
-            render_plan(self.plan,OUT); self.latest_output=OUT; self._refresh_output_controls(); self.out.insert('end',f'RENDERED: {OUT}\n'); self.status.set('Audio ready — play it or save as WAV/MP3')
+            render_plan(self.plan,OUT); self.latest_output=OUT; self._refresh_output_controls(); self.out.insert('end',f'RENDERED: {OUT}\n')
+            self.status.set('Audio ready — play it or save as WAV/MP3' if self.ffmpeg_path else 'Audio ready — play it or save as WAV; MP3 needs FFmpeg')
         except Exception as e:self.out.insert('end',f'RENDER UNAVAILABLE: {e}\n'); self.status.set('Audio could not be rendered')
 
 if __name__=='__main__':

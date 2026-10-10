@@ -3,7 +3,10 @@ __pycache__/
 .venv/
 .mfa/
 output/
+build/
+dist/
 data/whisperx_raw/
 data/mfa_config/
 data/mfa_phone_work/
 data/*demo*library.json
+/VoiceLineMixer.spec
